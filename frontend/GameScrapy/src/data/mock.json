@@ -1,0 +1,736 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Aragorn",
+      "universe": "Le Seigneur des Anneaux",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 85,
+      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop&crop=face",
+      "description": "Héritier du trône du Gondor, Aragorn est un rôdeur expérimenté et un leader né. Son courage et sa détermination en font un allié précieux dans la lutte contre les forces du mal. Maître de l'épée et tacticien hors pair, il inspire ses compagnons par sa noblesse d'âme.",
+      "stats": {
+        "strength": 92,
+        "agility": 78,
+        "intelligence": 85
+      },
+      "abilities": [
+        {
+          "name": "Lame du Roi",
+          "icon": "⚔️",
+          "description": "Une attaque puissante qui inflige des dégâts massifs et ignore une partie de l'armure ennemie",
+          "damage": "250-300",
+          "cooldown": 8
+        },
+        {
+          "name": "Inspiration Royale",
+          "icon": "👑",
+          "description": "Boost les stats de tous les alliés et leur confère une résistance aux effets négatifs",
+          "cooldown": 15
+        },
+        {
+          "name": "Charge Héroïque",
+          "icon": "🏇",
+          "description": "Se lance vers l'ennemi en infligeant des dégâts et en étourdit les adversaires proches",
+          "damage": "180-220",
+          "cooldown": 12
+        }
+      ],
+      "background": "Roi du Gondor",
+      "faction": "Communauté de l'Anneau"
+    },
+    {
+      "id": 2,
+      "name": "Gandalf le Gris",
+      "universe": "Le Seigneur des Anneaux",
+      "role": "Mage",
+      "rarity": "Légendaire",
+      "level": 99,
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face",
+      "description": "Mage puissant et sage, Gandalf guide les peuples libres dans leur quête. Sa magie et sa sagesse sont légendaires. Istar envoyé en Terre du Milieu, il possède une connaissance ancienne et des pouvoirs mystiques considérables.",
+      "stats": {
+        "strength": 65,
+        "agility": 70,
+        "intelligence": 98
+      },
+      "abilities": [
+        {
+          "name": "Éclair Divin",
+          "icon": "⚡",
+          "description": "Frappe les ennemis avec la puissance de la foudre, causant des dégâts élémentaires",
+          "damage": "300-400",
+          "cooldown": 10
+        },
+        {
+          "name": "Bouclier de Lumière",
+          "icon": "🛡️",
+          "description": "Protège les alliés des attaques magiques et reflète les sorts ennemis",
+          "cooldown": 12
+        },
+        {
+          "name": "Flamme d'Anor",
+          "icon": "🔥",
+          "description": "Invoque une flamme purificatrice qui inflige des dégâts continus",
+          "damage": "200-250 (sur 5 tours)",
+          "cooldown": 18
+        }
+      ],
+      "background": "Istar",
+      "faction": "Communauté de l'Anneau"
+    },
+    {
+      "id": 3,
+      "name": "Legolas",
+      "universe": "Le Seigneur des Anneaux",
+      "role": "Archer",
+      "rarity": "Épique",
+      "level": 75,
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
+      "description": "Elfe archer d'une précision inégalée, Legolas peut toucher sa cible à des distances impossibles. Fils du roi Thranduil, ses sens elfiques et sa maîtrise de l'arc en font un combattant redoutable à distance.",
+      "stats": {
+        "strength": 72,
+        "agility": 95,
+        "intelligence": 80
+      },
+      "abilities": [
+        {
+          "name": "Tir de Précision",
+          "icon": "🏹",
+          "description": "Un tir qui ne rate jamais sa cible et peut percer plusieurs ennemis alignés",
+          "damage": "200-250",
+          "cooldown": 6
+        },
+        {
+          "name": "Pluie de Flèches",
+          "icon": "🌧️",
+          "description": "Attaque multiple touchant tous les ennemis dans une large zone",
+          "damage": "150-180 (zone)",
+          "cooldown": 14
+        },
+        {
+          "name": "Pas Elfique",
+          "icon": "🍃",
+          "description": "Augmente l'agilité et permet d'éviter les attaques pendant 3 tours",
+          "cooldown": 16
+        }
+      ],
+      "background": "Prince de la Forêt Noire",
+      "faction": "Communauté de l'Anneau"
+    },
+    {
+      "id": 4,
+      "name": "Naruto Uzumaki",
+      "universe": "Naruto",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 90,
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face",
+      "description": "Ninja au grand cœur, Naruto possède une détermination sans faille et la puissance du démon renard à neuf queues. Hokage du village de Konoha, il maîtrise le mode Sage et diverses techniques de clonage.",
+      "stats": {
+        "strength": 88,
+        "agility": 92,
+        "intelligence": 75
+      },
+      "abilities": [
+        {
+          "name": "Rasengan",
+          "icon": "🌀",
+          "description": "Technique de chakra concentré qui cause des dégâts dévastateurs au contact",
+          "damage": "280-320",
+          "cooldown": 8
+        },
+        {
+          "name": "Multi-Clonage",
+          "icon": "👥",
+          "description": "Crée plusieurs clones pour attaquer simultanément l'ennemi",
+          "damage": "150-200 (x3 clones)",
+          "cooldown": 10
+        },
+        {
+          "name": "Mode Kurama",
+          "icon": "🦊",
+          "description": "Libère la puissance du démon renard, doublant toutes les statistiques",
+          "cooldown": 25
+        }
+      ],
+      "background": "Hokage de Konoha",
+      "faction": "Village de Konoha"
+    },
+    {
+      "id": 5,
+      "name": "Sasuke Uchiha",
+      "universe": "Naruto",
+      "role": "Assassin",
+      "rarity": "Légendaire",
+      "level": 88,
+      "image": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face",
+      "description": "Dernier survivant du clan Uchiha, maître du Sharingan et techniques de foudre. Rival éternel de Naruto, ses pouvoirs visuels et sa maîtrise du ninjutsu en font un adversaire redoutable.",
+      "stats": {
+        "strength": 85,
+        "agility": 94,
+        "intelligence": 90
+      },
+      "abilities": [
+        {
+          "name": "Chidori",
+          "icon": "⚡",
+          "description": "Attaque de foudre concentrée qui perce les défenses ennemies",
+          "damage": "300-350",
+          "cooldown": 9
+        },
+        {
+          "name": "Sharingan",
+          "icon": "👁️",
+          "description": "Copie les techniques ennemies et prédit leurs mouvements",
+          "cooldown": 20
+        },
+        {
+          "name": "Amaterasu",
+          "icon": "🔥",
+          "description": "Flammes noires inextinguibles qui brûlent tout sur leur passage",
+          "damage": "250-300 (sur 4 tours)",
+          "cooldown": 22
+        }
+      ],
+      "background": "Survivant Uchiha",
+      "faction": "Équipe 7"
+    },
+    {
+      "id": 6,
+      "name": "Sakura Haruno",
+      "universe": "Naruto",
+      "role": "Soigneur",
+      "rarity": "Épique",
+      "level": 82,
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=400&fit=crop&crop=face",
+      "description": "Ninja médical d'exception, élève de Tsunade, capable de soigner et de se battre avec une force surhumaine. Sa maîtrise du ninjutsu médical et sa force physique en font un soutien précieux.",
+      "stats": {
+        "strength": 78,
+        "agility": 75,
+        "intelligence": 92
+      },
+      "abilities": [
+        {
+          "name": "Soin Mystique",
+          "icon": "💚",
+          "description": "Soigne instantanément les blessures des alliés et retire les effets négatifs",
+          "healing": "200-300",
+          "cooldown": 8
+        },
+        {
+          "name": "Force de Cent Sceaux",
+          "icon": "💪",
+          "description": "Libère le chakra stocké pour décupler temporairement la force physique",
+          "damage": "250-300",
+          "cooldown": 25
+        },
+        {
+          "name": "Régénération",
+          "icon": "🌸",
+          "description": "Régénère lentement les PV de tous les alliés pendant 5 tours",
+          "healing": "50 par tour",
+          "cooldown": 18
+        }
+      ],
+      "background": "Ninja Médical",
+      "faction": "Équipe 7"
+    },
+    {
+      "id": 7,
+      "name": "Son Goku",
+      "universe": "Dragon Ball",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 95,
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=400&fit=crop&crop=face",
+      "description": "Saiyan au cœur pur, toujours en quête de dépassement et de combats épiques. Protecteur de la Terre, il maîtrise de nombreuses transformations qui décuplent sa puissance au combat.",
+      "stats": {
+        "strength": 98,
+        "agility": 90,
+        "intelligence": 70
+      },
+      "abilities": [
+        {
+          "name": "Kamehameha",
+          "icon": "💥",
+          "description": "Vague d'énergie dévastatrice qui peut détruire des planètes entières",
+          "damage": "350-450",
+          "cooldown": 12
+        },
+        {
+          "name": "Transformation Super Saiyan",
+          "icon": "⭐",
+          "description": "Augmente drastiquement toutes les statistiques et débloquer de nouvelles attaques",
+          "cooldown": 30
+        },
+        {
+          "name": "Téléportation Instantanée",
+          "icon": "⚡",
+          "description": "Se téléporte derrière l'ennemi pour une attaque surprise critique",
+          "damage": "200-250 (critique garanti)",
+          "cooldown": 15
+        }
+      ],
+      "background": "Guerrier Saiyan",
+      "faction": "Guerriers Z"
+    },
+    {
+      "id": 8,
+      "name": "Vegeta",
+      "universe": "Dragon Ball",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 93,
+      "image": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=300&h=400&fit=crop&crop=face",
+      "description": "Prince des Saiyans, orgueilleux et puissant, rival éternel de Goku. Son orgueil de guerrier elite et sa détermination à surpasser Kakarot en font un combattant redoutable et impitoyable.",
+      "stats": {
+        "strength": 96,
+        "agility": 88,
+        "intelligence": 85
+      },
+      "abilities": [
+        {
+          "name": "Final Flash",
+          "icon": "🔥",
+          "description": "Attaque énergétique ultime qui concentre toute la puissance du Prince",
+          "damage": "380-420",
+          "cooldown": 15
+        },
+        {
+          "name": "Orgueil du Prince",
+          "icon": "👑",
+          "description": "Résiste aux effets de statut négatifs et augmente les dégâts quand les PV sont bas",
+          "cooldown": 20
+        },
+        {
+          "name": "Big Bang Attack",
+          "icon": "💫",
+          "description": "Explosion d'énergie qui frappe tous les ennemis dans une large zone",
+          "damage": "250-300 (zone)",
+          "cooldown": 18
+        }
+      ],
+      "background": "Prince Saiyan",
+      "faction": "Guerriers Z"
+    },
+    {
+      "id": 9,
+      "name": "Piccolo",
+      "universe": "Dragon Ball",
+      "role": "Tank",
+      "rarity": "Épique",
+      "level": 78,
+      "image": "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=300&h=400&fit=crop&crop=face",
+      "description": "Namek devenu protecteur de la Terre, mentor et combattant redoutable. Ancien ennemi devenu allié, sa capacité de régénération et sa puissance font de lui un tank parfait.",
+      "stats": {
+        "strength": 80,
+        "agility": 70,
+        "intelligence": 95
+      },
+      "abilities": [
+        {
+          "name": "Makankosappo",
+          "icon": "🌀",
+          "description": "Rayon spiral perforant qui transperce les défenses les plus solides",
+          "damage": "280-320",
+          "cooldown": 10
+        },
+        {
+          "name": "Régénération Namek",
+          "icon": "💚",
+          "description": "Récupère instantanément des points de vie et peut faire repousser des membres",
+          "healing": "300-400",
+          "cooldown": 18
+        },
+        {
+          "name": "Gigantification",
+          "icon": "👹",
+          "description": "Augmente la taille et les statistiques défensives",
+          "cooldown": 22
+        }
+      ],
+      "background": "Guerrier Namek",
+      "faction": "Guerriers Z"
+    },
+    {
+      "id": 10,
+      "name": "Monkey D. Luffy",
+      "universe": "One Piece",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 87,
+      "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=300&h=400&fit=crop&crop=face",
+      "description": "Capitaine pirate au corps de caoutchouc, déterminé à devenir le Roi des Pirates. Son fruit du démon lui confère une élasticité incroyable et une résistance aux attaques contondantes.",
+      "stats": {
+        "strength": 90,
+        "agility": 85,
+        "intelligence": 65
+      },
+      "abilities": [
+        {
+          "name": "Gear Second",
+          "icon": "💨",
+          "description": "Accélère la circulation sanguine pour augmenter vitesse et puissance",
+          "cooldown": 15
+        },
+        {
+          "name": "Gomu Gomu Pistol",
+          "icon": "👊",
+          "description": "Étend le bras pour frapper à distance avec une force décuplée",
+          "damage": "200-280",
+          "cooldown": 5
+        },
+        {
+          "name": "Gear Fourth",
+          "icon": "🎈",
+          "description": "Transformation ultime qui augmente drastiquement toutes les capacités",
+          "damage": "400-500",
+          "cooldown": 35
+        }
+      ],
+      "background": "Capitaine Pirate",
+      "faction": "Équipage du Chapeau de Paille"
+    },
+    {
+      "id": 11,
+      "name": "Roronoa Zoro",
+      "universe": "One Piece",
+      "role": "Guerrier",
+      "rarity": "Épique",
+      "level": 84,
+      "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=300&h=400&fit=crop&crop=face",
+      "description": "Épéiste à trois sabres, bras droit de Luffy et futur plus grand épéiste du monde. Sa technique unique à trois lames et sa détermination inébranlable en font un combattant légendaire.",
+      "stats": {
+        "strength": 92,
+        "agility": 88,
+        "intelligence": 60
+      },
+      "abilities": [
+        {
+          "name": "Santoryu",
+          "icon": "⚔️",
+          "description": "Style de combat unique utilisant trois sabres simultanément",
+          "damage": "270-320",
+          "cooldown": 8
+        },
+        {
+          "name": "Oni Giri",
+          "icon": "👹",
+          "description": "Attaque dévastatrice aux trois lames qui peut fendre l'acier",
+          "damage": "300-350",
+          "cooldown": 12
+        },
+        {
+          "name": "Asura",
+          "icon": "😈",
+          "description": "Manifestation spirituelle qui crée l'illusion de neuf sabres",
+          "damage": "350-400",
+          "cooldown": 25
+        }
+      ],
+      "background": "Chasseur de Prime",
+      "faction": "Équipage du Chapeau de Paille"
+    },
+    {
+      "id": 12,
+      "name": "Nami",
+      "universe": "One Piece",
+      "role": "Support",
+      "rarity": "Rare",
+      "level": 65,
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b754?w=300&h=400&fit=crop&crop=face",
+      "description": "Navigatrice exceptionnelle maîtrisant la météorologie et la cartographie. Son Clima-Tact lui permet de manipuler la météo pour créer des attaques élémentaires dévastatrices.",
+      "stats": {
+        "strength": 45,
+        "agility": 78,
+        "intelligence": 90
+      },
+      "abilities": [
+        {
+          "name": "Clima-Tact",
+          "icon": "🌩️",
+          "description": "Manipule la météo pour créer des attaques élémentaires variées",
+          "damage": "180-220",
+          "cooldown": 10
+        },
+        {
+          "name": "Navigation Parfaite",
+          "icon": "🗺️",
+          "description": "Guide l'équipe vers la victoire et augmente l'esquive de tous les alliés",
+          "cooldown": 20
+        },
+        {
+          "name": "Mirage Tempo",
+          "icon": "💫",
+          "description": "Crée des illusions pour tromper les ennemis et réduire leur précision",
+          "cooldown": 15
+        }
+      ],
+      "background": "Navigatrice",
+      "faction": "Équipage du Chapeau de Paille"
+    },
+    {
+      "id": 13,
+      "name": "Edward Elric",
+      "universe": "Fullmetal Alchemist",
+      "role": "Mage",
+      "rarity": "Épique",
+      "level": 80,
+      "image": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=400&fit=crop&crop=face",
+      "description": "Alchimiste prodige capable de transmutation sans cercle alchimique. Déterminé à récupérer son corps et celui de son frère, il maîtrise l'alchimie comme peu d'autres.",
+      "stats": {
+        "strength": 75,
+        "agility": 82,
+        "intelligence": 95
+      },
+      "abilities": [
+        {
+          "name": "Transmutation",
+          "icon": "🔄",
+          "description": "Transforme la matière environnante en armes ou barrières",
+          "damage": "220-280",
+          "cooldown": 8
+        },
+        {
+          "name": "Lame d'Automail",
+          "icon": "🗡️",
+          "description": "Transforme son bras mécanique en lame tranchante",
+          "damage": "250-300",
+          "cooldown": 10
+        },
+        {
+          "name": "Mur Alchimique",
+          "icon": "🛡️",
+          "description": "Crée un mur défensif qui absorbe les dégâts",
+          "cooldown": 15
+        }
+      ],
+      "background": "Alchimiste d'État",
+      "faction": "Militaire d'Amestris"
+    },
+    {
+      "id": 14,
+      "name": "Saber",
+      "universe": "Fate",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 92,
+      "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=400&fit=crop&crop=face",
+      "description": "Roi légendaire invoqué comme Servant. Maître de l'épée sacrée Excalibur, elle incarne l'honneur et la chevalerie dans sa forme la plus pure.",
+      "stats": {
+        "strength": 95,
+        "agility": 88,
+        "intelligence": 85
+      },
+      "abilities": [
+        {
+          "name": "Excalibur",
+          "icon": "⚔️",
+          "description": "Épée sacrée qui libère un rayon de lumière purificateur",
+          "damage": "400-500",
+          "cooldown": 20
+        },
+        {
+          "name": "Instinct",
+          "icon": "👁️",
+          "description": "Prémonition du danger qui augmente l'esquive et la contre-attaque",
+          "cooldown": 18
+        },
+        {
+          "name": "Charisme",
+          "icon": "👑",
+          "description": "Inspire les alliés et augmente leurs statistiques de combat",
+          "cooldown": 25
+        }
+      ],
+      "background": "Roi Arthur",
+      "faction": "Servants"
+    },
+    {
+      "id": 15,
+      "name": "Tanjiro Kamado",
+      "universe": "Demon Slayer",
+      "role": "Guerrier",
+      "rarity": "Épique",
+      "level": 76,
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=400&fit=crop&crop=face",
+      "description": "Pourfendeur de démons au grand cœur, maître du souffle de l'eau. Sa compassion même envers ses ennemis et sa détermination à sauver sa sœur en font un héros exceptionnel.",
+      "stats": {
+        "strength": 85,
+        "agility": 90,
+        "intelligence": 80
+      },
+      "abilities": [
+        {
+          "name": "Souffle de l'Eau",
+          "icon": "🌊",
+          "description": "Techniques d'épée fluides comme l'eau qui tranchent avec précision",
+          "damage": "240-290",
+          "cooldown": 8
+        },
+        {
+          "name": "Danse du Dragon de Feu",
+          "icon": "🔥",
+          "description": "Technique héritée qui combine plusieurs formes en une attaque dévastatrice",
+          "damage": "320-380",
+          "cooldown": 15
+        },
+        {
+          "name": "Odorat Développé",
+          "icon": "👃",
+          "description": "Détecte les faiblesses ennemies et augmente la précision",
+          "cooldown": 12
+        }
+      ],
+      "background": "Pourfendeur de Démons",
+      "faction": "Corps des Pourfendeurs"
+    },
+    {
+      "id": 16,
+      "name": "Giyu Tomioka",
+      "universe": "Demon Slayer",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 89,
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face",
+      "description": "Pilier de l'Eau, l'un des épéistes les plus puissants du Corps des Pourfendeurs. Sa maîtrise parfaite du souffle de l'eau et sa technique unique en font un combattant redoutable.",
+      "stats": {
+        "strength": 90,
+        "agility": 95,
+        "intelligence": 88
+      },
+      "abilities": [
+        {
+          "name": "Forme Morte",
+          "icon": "🌊",
+          "description": "Technique défensive ultime qui annule toutes les attaques",
+          "cooldown": 20
+        },
+        {
+          "name": "Lame Fluide",
+          "icon": "💧",
+          "description": "Attaque qui s'adapte aux mouvements de l'ennemi",
+          "damage": "280-330",
+          "cooldown": 10
+        },
+        {
+          "name": "Calme Olympien",
+          "icon": "🧘",
+          "description": "Immunité aux effets de statut et régénération lente",
+          "cooldown": 25
+        }
+      ],
+      "background": "Pilier de l'Eau",
+      "faction": "Corps des Pourfendeurs"
+    },
+    {
+      "id": 17,
+      "name": "Ichigo Kurosaki",
+      "universe": "Bleach",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 91,
+      "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=300&h=400&fit=crop&crop=face",
+      "description": "Shinigami remplaçant aux pouvoirs multiples. Mi-humain, mi-shinigami, il possède également des pouvoirs de Hollow et de Quincy, faisant de lui un être unique.",
+      "stats": {
+        "strength": 93,
+        "agility": 89,
+        "intelligence": 78
+      },
+      "abilities": [
+        {
+          "name": "Zangetsu",
+          "icon": "🗡️",
+          "description": "Zanpakuto massif qui libère des vagues d'énergie spirituelle",
+          "damage": "310-370",
+          "cooldown": 12
+        },
+        {
+          "name": "Bankai",
+          "icon": "⚡",
+          "description": "Libération finale qui augmente drastiquement la vitesse et la puissance",
+          "cooldown": 30
+        },
+        {
+          "name": "Getsuga Tensho",
+          "icon": "🌙",
+          "description": "Vague d'énergie spirituelle concentrée en forme de croissant",
+          "damage": "280-340",
+          "cooldown": 15
+        }
+      ],
+      "background": "Shinigami Remplaçant",
+      "faction": "Soul Society"
+    },
+    {
+      "id": 18,
+      "name": "Saitama",
+      "universe": "One Punch Man",
+      "role": "Guerrier",
+      "rarity": "Légendaire",
+      "level": 100,
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face",
+      "description": "Héros pour le plaisir capable de vaincre n'importe quel ennemi en un seul coup de poing. Sa force illimitée est le résultat d'un entraînement intense et de sa détermination.",
+      "stats": {
+        "strength": 100,
+        "agility": 95,
+        "intelligence": 60
+      },
+      "abilities": [
+        {
+          "name": "Coup de Poing Normal",
+          "icon": "👊",
+          "description": "Un coup de poing basique qui élimine instantanément la plupart des ennemis",
+          "damage": "999999",
+          "cooldown": 1
+        },
+        {
+          "name": "Coup de Poing Sérieux",
+          "icon": "💥",
+          "description": "Version sérieuse qui peut détruire des montagnes entières",
+          "damage": "999999",
+          "cooldown": 10
+        },
+        {
+          "name": "Saut Lunaire",
+          "icon": "🚀",
+          "description": "Saute si haut qu'il peut atteindre la lune",
+          "damage": "500000 (zone)",
+          "cooldown": 20
+        }
+      ],
+      "background": "Héros Classe S",
+      "faction": "Association des Héros"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "total_characters": 18,
+    "universes": [
+      "Le Seigneur des Anneaux",
+      "Naruto", 
+      "Dragon Ball",
+      "One Piece",
+      "Fullmetal Alchemist",
+      "Fate",
+      "Demon Slayer",
+      "Bleach",
+      "One Punch Man"
+    ],
+    "roles": [
+      "Guerrier",
+      "Mage", 
+      "Archer",
+      "Assassin",
+      "Soigneur",
+      "Tank",
+      "Support"
+    ],
+    "rarities": [
+      "Légendaire",
+      "Épique", 
+      "Rare",
+      "Commun"
+    ]
+  }
+}
