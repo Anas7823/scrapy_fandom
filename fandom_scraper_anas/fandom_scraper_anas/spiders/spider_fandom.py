@@ -40,7 +40,7 @@ class SpiderFandom(scrapy.Spider):
 
     def parse(self, response):
         self.logger.info(f"Visiting game page: {response.url}")
-        # game_name = response.css("h1#firstHeading::text").get()
+
         game_name = response.css("h1.page-header__title, h1#firstHeading").xpath(".//text()").getall()
         game_name = " ".join([n.strip() for n in game_name if n.strip()])
 
@@ -49,6 +49,10 @@ class SpiderFandom(scrapy.Spider):
             image_url = "https:" + image_url
 
         description = " ".join(response.css(".mw-parser-output > p::text").getall()).strip()
+        
+        # Limiter la longueur de la description
+        if len(description) > 500:
+            description = description[:500] + "..."
 
         attributes = {}
         for row in response.css(".portable-infobox .pi-item, .infobox tr"):
