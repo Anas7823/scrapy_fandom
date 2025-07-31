@@ -7,6 +7,7 @@ class GameItem(scrapy.Item):
     image = scrapy.Field()
     description = scrapy.Field()
     attributes = scrapy.Field()
+    personnages = scrapy.Field()
 
 class CharacterItem(scrapy.Item):
     type = scrapy.Field(default="character")
@@ -15,4 +16,5 @@ class CharacterItem(scrapy.Item):
     image = scrapy.Field()
     description = scrapy.Field()
     attributes = scrapy.Field()
+    game = scrapy.Field()
 

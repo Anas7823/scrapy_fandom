@@ -83,16 +83,15 @@ class SpiderFandom(scrapy.Spider):
             yield scrapy.Request(
                 url=link,
                 callback=self.parse_character,
-                meta={"playwright": True}
+                meta={"playwright": True, "game_name": game_name}
             )
 
     def parse_character(self, response):
         self.logger.info(f"Visiting character page: {response.url}")
-
-        # name = response.css("h1.page-header__title::text").get()
-        # name = response.css("h1.page-header__title *::text").getall()
+        
         name = response.css("h1.page-header__title, h1#firstHeading").xpath(".//text()").getall()
         name = " ".join([n.strip() for n in name if n.strip()])
+        game_name = response.meta.get("game_name", "")
 
         image_url = response.css(".portable-infobox img::attr(src), .infobox img::attr(src)").get()
         if image_url and image_url.startswith("//"):
@@ -114,6 +113,7 @@ class SpiderFandom(scrapy.Spider):
         yield CharacterItem(
             url=response.url,
             name=name,
+            game=game_name,
             image=image_url,
             description=description,
             attributes=attributes
