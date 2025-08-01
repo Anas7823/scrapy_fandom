@@ -1,4 +1,4 @@
 # Rapport de scraping
 
 - Statut : `finished`
-- Pages personnages uniques visitées : 45
+- Pages personnages uniques visitées : 0

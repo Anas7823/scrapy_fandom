@@ -11,4 +11,4 @@ Et la commande > npm run dev
 
 Problème rencontrer :
 
-Au lieu de scrapper en + le lien fandom mis dans la barre de recherche front, notre scraper re scrap les liens définis en dur.
+Le resultat inclus dans le json n'entre pas correctement dans le tableau et génère une erreur de syntaxe
