@@ -6,7 +6,7 @@
         <div class="loading-content">
           <div class="loading-logo">
             <span class="logo-icon">⚔️</span>
-            <h1 class="logo-text">Wiki Characters</h1>
+            <h1 class="logo-text">Fandom Scraper</h1>
           </div>
           <div class="loading-spinner">
             <div class="spinner-ring"></div>
@@ -23,11 +23,28 @@
     <!-- Application principale -->
     <Transition name="slide-up" appear>
       <main v-if="!isInitialLoading" class="app-main">
-        <!-- Router View pour la navigation (si nécessaire) -->
-        <router-view v-if="$router" />
-        
-        <!-- Composant Home par défaut -->
-        <Home v-else />
+        <!-- Navigation simple -->
+        <nav class="simple-nav">
+          <div class="nav-container">
+            <button 
+              @click="currentView = 'home'"
+              class="nav-btn"
+              :class="{ 'active': currentView === 'home' }"
+            >
+              🏠 Home Original
+            </button>
+            <button 
+              @click="currentView = 'scraped'"
+              class="nav-btn"
+              :class="{ 'active': currentView === 'scraped' }"
+            >
+              🎮 Données Scrappées
+            </button>
+          </div>
+        </nav>
+
+        <!-- Affichage conditionnel des composants -->
+        <component :is="currentComponent" />
         
         <!-- Notifications Toast -->
         <div class="toast-container">
@@ -83,14 +100,17 @@
 
 <script>
 import Home from './view/Home.vue'
+import RealDataHome from './view/RealDataHome.vue'
 
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    RealDataHome
   },
   data() {
     return {
+      currentView: 'scraped', // Démarrer sur les données scrappées
       isInitialLoading: true,
       loadingProgress: 0,
       loadingText: 'Initialisation...',
@@ -102,9 +122,9 @@ export default {
       
       // Étapes de chargement
       loadingSteps: [
-        { text: 'Initialisation...', duration: 500 },
-        { text: 'Chargement des personnages...', duration: 800 },
-        { text: 'Configuration de l\'interface...', duration: 400 },
+        { text: 'Initialisation...', duration: 300 },
+        { text: 'Chargement des données scrappées...', duration: 500 },
+        { text: 'Configuration de l\'interface gaming...', duration: 400 },
         { text: 'Préparation des animations...', duration: 300 },
         { text: 'Finalisation...', duration: 200 }
       ]
@@ -117,6 +137,9 @@ export default {
         'app-offline': !this.isOnline,
         'app-has-overlay': this.hasGlobalOverlay
       }
+    },
+    currentComponent() {
+      return this.currentView === 'home' ? 'Home' : 'RealDataHome';
     }
   },
   async mounted() {
@@ -146,10 +169,10 @@ export default {
             await this.initializeTheme();
             break;
           case 1:
-            await this.loadCharacterData();
+            await this.loadScrapedData();
             break;
           case 2:
-            await this.setupUI();
+            await this.setupGamingUI();
             break;
           case 3:
             await this.prepareAnimations();
@@ -167,30 +190,28 @@ export default {
       this.showToast({
         type: 'success',
         title: 'Bienvenue !',
-        message: 'L\'application a été chargée avec succès',
+        message: 'Fandom Scraper chargé avec succès',
         duration: 3000
       });
     },
     
     async initializeTheme() {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-      }
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
     },
     
-    async loadCharacterData() {
-      // Ici, on pourrait charger les vraies données depuis une API
-      // Pour l'instant, on simule juste le chargement
+    async loadScrapedData() {
+      // Simuler le chargement des données
       return new Promise(resolve => {
-        setTimeout(resolve, 300);
+        setTimeout(resolve, 200);
       });
     },
     
-    async setupUI() {
-      // Configuration de l'interface utilisateur
+    async setupGamingUI() {
+      // Configuration de l'interface gaming
+      document.body.classList.add('gaming-ready');
       return new Promise(resolve => {
-        setTimeout(resolve, 200);
+        setTimeout(resolve, 150);
       });
     },
     
@@ -279,6 +300,17 @@ export default {
       if (event.ctrlKey && event.key === 'Home') {
         event.preventDefault();
         this.scrollToTop();
+      }
+      
+      // Raccourci pour basculer entre les vues (Ctrl + Tab)
+      if (event.ctrlKey && event.key === 'Tab') {
+        event.preventDefault();
+        this.currentView = this.currentView === 'home' ? 'scraped' : 'home';
+        this.showToast({
+          type: 'info',
+          message: `Basculé vers ${this.currentView === 'home' ? 'Home Original' : 'Données Scrappées'}`,
+          duration: 2000
+        });
       }
       
       // Raccourci pour basculer le thème (Ctrl + Shift + T)
@@ -371,6 +403,69 @@ export default {
   overflow-x: hidden;
 }
 
+/* Navigation simple */
+.simple-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 8, 20, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 2px solid var(--gaming-primary, #00ff41);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav-btn {
+  background: rgba(0, 29, 61, 0.5);
+  border: 2px solid var(--gaming-border, #003566);
+  color: var(--gaming-text, #ffffff);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-btn:hover {
+  border-color: var(--gaming-primary, #00ff41);
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+}
+
+.nav-btn.active {
+  background: var(--gaming-primary, #00ff41);
+  border-color: var(--gaming-primary, #00ff41);
+  color: var(--gaming-bg, #000814);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
+}
+
+.nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.nav-btn:hover::before {
+  left: 100%;
+}
+
 /* Loading Screen */
 .app-loading {
   position: fixed;
@@ -378,7 +473,7 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, #000814, #001d3d);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,33 +484,36 @@ export default {
   text-align: center;
   color: white;
   max-width: 400px;
-  padding: var(--spacing-xl);
+  padding: 2rem;
 }
 
 .loading-logo {
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: 3rem;
   animation: float 3s ease-in-out infinite;
 }
 
 .logo-icon {
   font-size: 4rem;
   display: block;
-  margin-bottom: var(--spacing-md);
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 8px rgba(0,255,65,0.3));
+  color: var(--gaming-primary, #00ff41);
 }
 
 .logo-text {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 0 20px rgba(0,255,65,0.5);
+  font-family: 'Orbitron', sans-serif;
+  color: var(--gaming-primary, #00ff41);
 }
 
 .loading-spinner {
   position: relative;
   width: 80px;
   height: 80px;
-  margin: 0 auto var(--spacing-xl);
+  margin: 0 auto 2rem;
 }
 
 .spinner-ring {
@@ -423,38 +521,42 @@ export default {
   width: 100%;
   height: 100%;
   border: 3px solid transparent;
-  border-top: 3px solid rgba(255, 255, 255, 0.8);
+  border-top: 3px solid rgba(0, 255, 65, 0.8);
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
 
 .spinner-ring-delay {
   animation-delay: -0.6s;
-  border-top-color: rgba(255, 255, 255, 0.4);
+  border-top-color: rgba(0, 255, 65, 0.4);
 }
 
 .loading-text {
-  font-size: 1.1rem;
-  margin-bottom: var(--spacing-lg);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 500;
   min-height: 1.5em;
   animation: pulse 1.5s ease-in-out infinite;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.8rem;
 }
 
 .loading-progress {
   width: 100%;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
+  height: 6px;
+  background: rgba(0, 255, 65, 0.2);
+  border-radius: 3px;
   overflow: hidden;
+  border: 1px solid var(--gaming-primary, #00ff41);
 }
 
 .progress-bar {
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gaming-primary, #00ff41), var(--gaming-accent, #00ccff));
+  border-radius: 3px;
   transition: width 0.3s ease;
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
 }
 
 .progress-bar::after {
@@ -474,7 +576,7 @@ export default {
   position: relative;
 }
 
-/* Toast Notifications */
+/* Toast Notifications - styles identiques */
 .toast-container {
   position: fixed;
   top: 20px;
@@ -486,15 +588,15 @@ export default {
 }
 
 .toast {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--elevation-4);
-  padding: var(--spacing-md);
-  margin-bottom: var(--spacing-md);
+  background: var(--gaming-surface, #001d3d);
+  border: 1px solid var(--gaming-border, #003566);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: flex-start;
-  gap: var(--spacing-md);
+  gap: 1rem;
   pointer-events: auto;
   backdrop-filter: blur(10px);
   position: relative;
@@ -508,24 +610,13 @@ export default {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: var(--primary-color);
+  background: var(--gaming-primary, #00ff41);
 }
 
-.toast-success::before {
-  background: var(--success);
-}
-
-.toast-error::before {
-  background: var(--error);
-}
-
-.toast-warning::before {
-  background: var(--warning);
-}
-
-.toast-info::before {
-  background: var(--info);
-}
+.toast-success::before { background: var(--gaming-success, #00ff88); }
+.toast-error::before { background: var(--gaming-error, #ff0040); }
+.toast-warning::before { background: var(--gaming-warning, #ffff00); }
+.toast-info::before { background: var(--gaming-accent, #00ccff); }
 
 .toast-icon {
   font-size: 1.2rem;
@@ -539,15 +630,15 @@ export default {
 }
 
 .toast-title {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: var(--spacing-xs);
-  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--gaming-text, #ffffff);
 }
 
 .toast-message {
-  font-size: var(--font-size-sm);
-  color: var(--text-secondary);
+  font-size: 0.8rem;
+  color: var(--gaming-text-dim, #8ecae6);
   line-height: 1.4;
   margin: 0;
 }
@@ -555,66 +646,60 @@ export default {
 .toast-close {
   background: none;
   border: none;
-  color: var(--text-secondary);
+  color: var(--gaming-text-dim, #8ecae6);
   cursor: pointer;
-  padding: var(--spacing-xs);
-  border-radius: var(--radius-sm);
-  transition: var(--transition-normal);
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
   flex-shrink: 0;
 }
 
 .toast-close:hover {
-  background: var(--error-light);
-  color: var(--error);
+  background: var(--gaming-error, #ff0040);
+  color: white;
 }
 
-/* Indicateur hors ligne */
+/* Autres styles identiques au fichier original */
 .offline-indicator {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background: var(--warning);
-  color: white;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--radius-full);
+  background: var(--gaming-warning, #ffff00);
+  color: var(--gaming-bg, #000814);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  box-shadow: var(--elevation-3);
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1500;
   animation: slideInLeft 0.5s ease;
 }
 
-.offline-icon {
-  font-size: 1rem;
-}
-
-/* Bouton retour en haut */
 .back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
-  background: var(--primary-color);
-  color: white;
+  background: var(--gaming-primary, #00ff41);
+  color: var(--gaming-bg, #000814);
   border: none;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--elevation-3);
-  transition: var(--transition-normal);
+  box-shadow: 0 4px 12px rgba(0, 255, 65, 0.3);
+  transition: all 0.3s ease;
   z-index: 1500;
 }
 
 .back-to-top:hover {
-  background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: var(--elevation-4);
+  box-shadow: 0 6px 20px rgba(0, 255, 65, 0.4);
 }
 
 .back-to-top-icon {
@@ -622,282 +707,71 @@ export default {
   font-weight: bold;
 }
 
-/* Overlay global */
-.global-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1900;
-  animation: fadeIn 0.3s ease;
-}
-
-/* Classes d'état */
-.app-loading-state {
-  overflow: hidden;
-}
-
-.app-offline .toast-container {
-  bottom: 80px;
-}
-
-.app-has-overlay {
-  overflow: hidden;
-}
-
-/* Animations de transition */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.slide-up-enter-active {
-  transition: all 0.6s ease;
-}
-
-.slide-up-enter-from {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.scale-enter-active,
-.scale-leave-active {
-  transition: all 0.3s ease;
-}
-
-.scale-enter-from,
-.scale-leave-to {
-  opacity: 0;
-  transform: scale(0.8);
-}
-
-.toast-enter-active {
-  transition: all 0.4s ease;
-}
-
-.toast-leave-active {
-  transition: all 0.3s ease;
-}
-
-.toast-enter-from {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.toast-leave-to {
-  opacity: 0;
-  transform: translateX(100%) scale(0.9);
-}
-
-.toast-move {
-  transition: transform 0.3s ease;
-}
-
-/* Animations personnalisées */
+/* Animations */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
 }
 
 @keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 @keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+  from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); }
 }
 
-/* Responsive Design */
+/* Transitions */
+.fade-enter-active, .fade-leave-active { transition: opacity 0.5s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+
+.slide-up-enter-active { transition: all 0.6s ease; }
+.slide-up-enter-from { opacity: 0; transform: translateY(30px); }
+
+.scale-enter-active, .scale-leave-active { transition: all 0.3s ease; }
+.scale-enter-from, .scale-leave-to { opacity: 0; transform: scale(0.8); }
+
+.toast-enter-active { transition: all 0.4s ease; }
+.toast-leave-active { transition: all 0.3s ease; }
+.toast-enter-from { opacity: 0; transform: translateX(100%); }
+.toast-leave-to { opacity: 0; transform: translateX(100%) scale(0.9); }
+.toast-move { transition: transform 0.3s ease; }
+
+/* Responsive */
 @media (max-width: 768px) {
+  .nav-container {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .nav-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.6rem;
+  }
+  
+  .loading-content { padding: 1.5rem; }
+  .logo-icon { font-size: 3rem; }
+  .logo-text { font-size: 1.5rem; }
+  .loading-spinner { width: 60px; height: 60px; }
+  
   .toast-container {
     top: 10px;
     right: 10px;
     left: 10px;
     max-width: none;
   }
-  
-  .offline-indicator {
-    bottom: 10px;
-    left: 10px;
-  }
-  
-  .back-to-top {
-    bottom: 80px;
-    right: 10px;
-    width: 45px;
-    height: 45px;
-  }
-  
-  .loading-content {
-    padding: var(--spacing-lg);
-  }
-  
-  .logo-icon {
-    font-size: 3rem;
-  }
-  
-  .logo-text {
-    font-size: 2rem;
-  }
-  
-  .loading-spinner {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  .toast {
-    padding: var(--spacing-sm);
-    font-size: var(--font-size-xs);
-  }
-  
-  .toast-title {
-    font-size: var(--font-size-xs);
-  }
-  
-  .toast-message {
-    font-size: var(--font-size-xs);
-  }
-  
-  .offline-indicator {
-    font-size: var(--font-size-xs);
-    padding: var(--spacing-xs) var(--spacing-sm);
-  }
-  
-  .back-to-top {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .back-to-top-icon {
-    font-size: 1.2rem;
-  }
-}
-
-/* Optimisations pour les performances */
-.loading-spinner,
-.progress-bar,
-.toast {
-  will-change: transform;
-}
-
-.app-loading {
-  will-change: opacity;
-}
-
-/* Support pour le mode sombre */
-[data-theme="dark"] .app-loading {
-  background: linear-gradient(135deg, #1e293b, #0f172a);
-}
-
-[data-theme="dark"] .toast {
-  background: var(--surface);
-  border-color: var(--border);
-  backdrop-filter: blur(20px);
-}
-
-/* Mode réduit de mouvement */
-@media (prefers-reduced-motion: reduce) {
-  .loading-logo,
-  .loading-text,
-  .spinner-ring,
-  .progress-bar::after {
-    animation: none;
-  }
-  
-  .back-to-top:hover {
-    transform: none;
-  }
-  
-  * {
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* Support pour les écrans haute résolution */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .toast {
-    backdrop-filter: blur(20px);
-  }
-  
-  .app-loading {
-    background-attachment: fixed;
-  }
-}
-
-/* Focus et accessibilité */
-.toast-close:focus-visible,
-.back-to-top:focus-visible {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
-}
-
-/* États d'interaction améliorés */
-.toast:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--elevation-5);
-}
-
-.back-to-top:active {
-  transform: translateY(0) scale(0.95);
-}
-
-/* Animations de chargement avancées */
-.loading-content {
-  animation: fadeInUp 1s ease-out;
-}
-
-.loading-spinner {
-  animation: scaleIn 0.5s ease-out 0.5s both;
-}
-
-.loading-text {
-  animation: fadeInUp 0.6s ease-out 0.8s both;
-}
-
-.loading-progress {
-  animation: fadeInUp 0.6s ease-out 1s both;
 }
 </style>
