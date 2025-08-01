@@ -1,14 +1,36 @@
 [
     {
-        "url": "https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki",
-        "name": "Home",
+        "url": "https://fallout.fandom.com/wiki/Fallout_Wiki",
+        "name": "Nukapedia: The Fallout",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://detroit-become-human.fandom.com/wiki/Detroit:_Become_Human",
+        "name": "Detroit: Become Human",
+        "image": "https://static.wikia.nocookie.net/detroit-become-human/images/7/72/Detroit_Become_Human_Cover_001.jpg/revision/latest/scale-to-width-down/268?cb=20190320202942",
+        "description": "is a cinematic neo-noir thriller game developed by   and published for PlayStation 4, releasing also for Microsoft Windows. The game is the company's 5th title and their fourth interactive drama. It is written and directed by Quantic Dream's founder and co-CEO  . The game itself was released on May 25, 2018 and the Digital Premium Version was released a day before on May 24, 2018 for PlayStation 4. For Microsoft Windows, it was released on December 12, 2019, as an   exclusive. It received a wide...",
+        "attributes": {
+            "Developer": "Quantic Dream",
+            "Publisher": "Sony Interactive Entertainment Quantic Dream (Microsoft Windows)",
+            "Director": "David Cage Benjamin Diebling",
+            "Producer": "Guillaume de Fondaumière Jason Stewart Sophie Buhl",
+            "Writer": "David Cage Adam Williams",
+            "Platform": "PlayStation 4 Microsoft Windows",
+            "Release Date": "May 25, 2018 (PlayStation 4) December 12, 2019 (Microsoft Windows - Epic Games Store) June 18, 2020 (Steam Store)"
+        }
+    },
+    {
+        "url": "https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki",
+        "name": "Pokémon",
         "image": null,
         "description": "",
         "attributes": {}
     },
     {
         "url": "https://nfs.fandom.com/wiki/Need_for_Speed:_Unbound",
-        "name": "Need for Speed: Unbound",
+        "name": "Need for Speed",
         "image": "https://static.wikia.nocookie.net/nfs/images/a/a7/NFSUB_Boxart.jpg/revision/latest/scale-to-width-down/268?cb=20221006192511&path-prefix=en",
         "description": "is the thirtieth game in the   and the first since   to be mainly developed by  .\n It was announced on October 6, 2022 by publisher   to be released for PC, PlayStation 5, and Xbox Series X/S on December 2, 2022. A three day early access period for those that pre-order the Palace Edition was also announced, starting on November 29, 2022.\n Starting on November 29, 2022, those with an EA Play subscription can play up to 10 hours of the standard release, and those with an EA Play Pro subscription c...",
         "attributes": {
@@ -28,45 +50,8 @@
         }
     },
     {
-        "url": "https://reddead.fandom.com/wiki/Red_Dead_Redemption_2",
-        "name": "Red Dead Redemption 2",
-        "image": "https://static.wikia.nocookie.net/reddeadredemption/images/0/0a/Reddeadcover.jpg/revision/latest/scale-to-width-down/268?cb=20180503145113",
-        "description": "(stylized as  ) is a western-themed action-adventure video game developed and published by  . It is the third entry in the   series and a prequel to 2010's   and was released on October 26th, 2018  on PlayStation 4, Xbox One  and on November 5th, 2019 for PC.\n Set in a fictional recreation of the American Old West in 1899,   focuses on the life of   and his position in the notorious  . The game follows the gang's decline as they are pursued by lawmen, fellow gangs and   agents. The narrative rev...",
-        "attributes": {
-            "Developer": "Rockstar Studios [ 1 ]",
-            "Publisher": "Rockstar Games",
-            "Release date": "October 26, 2018 (PS4, Xbox One) November 5, 2019 (PC) December 5, 2019 (Steam)",
-            "Genre": "Action-adventure",
-            "Engine": "RAGE",
-            "Modes": "Singleplayer, Multiplayer",
-            "Rating": "CERO : Z ESRB : M PEGI : 18 USK : 18 ACB : MA15+",
-            "Platforms": "Native ps4 PlayStation 4 xboxone Xbox One ps4pro Playstation 4 Pro xboxonex Xbox One X pc Microsoft Windows stadia Google Stadia Backward Compatible PlayStation 5 Xbox Series X/S",
-            "Media": "Blu-ray, digital download",
-            "System requirements": "Console : 105 GB Minimum [ 2 ]",
-            "Reviews": "metacritic Metacritic : 97% gamerankings Gamerankings : 96.45%",
-            "PC": "Steam",
-            "Xbox": "Xbox Network",
-            "PlayStation": "PSN"
-        }
-    },
-    {
-        "url": "https://detroit-become-human.fandom.com/wiki/Detroit:_Become_Human",
-        "name": "Detroit: Become Human",
-        "image": "https://static.wikia.nocookie.net/detroit-become-human/images/7/72/Detroit_Become_Human_Cover_001.jpg/revision/latest/scale-to-width-down/268?cb=20190320202942",
-        "description": "is a cinematic neo-noir thriller game developed by   and published for PlayStation 4, releasing also for Microsoft Windows. The game is the company's 5th title and their fourth interactive drama. It is written and directed by Quantic Dream's founder and co-CEO  . The game itself was released on May 25, 2018 and the Digital Premium Version was released a day before on May 24, 2018 for PlayStation 4. For Microsoft Windows, it was released on December 12, 2019, as an   exclusive. It received a wide...",
-        "attributes": {
-            "Developer": "Quantic Dream",
-            "Publisher": "Sony Interactive Entertainment Quantic Dream (Microsoft Windows)",
-            "Director": "David Cage Benjamin Diebling",
-            "Producer": "Guillaume de Fondaumière Jason Stewart Sophie Buhl",
-            "Writer": "David Cage Adam Williams",
-            "Platform": "PlayStation 4 Microsoft Windows",
-            "Release Date": "May 25, 2018 (PlayStation 4) December 12, 2019 (Microsoft Windows - Epic Games Store) June 18, 2020 (Steam Store)"
-        }
-    },
-    {
         "url": "https://gta.fandom.com/wiki/Grand_Theft_Auto_V",
-        "name": "Grand Theft Auto V",
+        "name": "GTA",
         "image": "https://static.wikia.nocookie.net/gtawiki/images/7/76/CoverArt-GTAV.png/revision/latest/scale-to-width-down/268?cb=20250708181846",
         "description": "(also known as  ,  ,  , and  ) is a video game developed by  . It is the fifteenth installment in the   series and the fifth game title in the   of the series.\n The original edition was released on September 17,  , for the   and  . The   and   \"enhanced\" versions were released on November 18,  , and was later released on April 14,  , for the  . A further \"expanded and enhanced\" version for the   and   released on March 15,  .  It was made available for the PC on March 4,  .\n Optionally, players ...",
         "attributes": {
@@ -95,6 +80,239 @@
         }
     },
     {
+        "url": "https://minecraft.fandom.com/wiki/Minecraft",
+        "name": "Minecraft",
+        "image": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/ce/Screenshot_%281911%29.png/revision/latest/scale-to-width-down/268?cb=20250622165818",
+        "description": "is a 3D   created by Swedish game developer  . It is maintained by  , a part of  , which in turn is part of  .\n From its creation,   was developed almost exclusively by Notch until   started working with him, and has since become head of its development. It features   by  ,  ,   and  , as well as   by  . Initially released as what is now known as     on May 17, 2009, the game was   on November 18, 2011. Since its release,   has expanded to  . On November 6, 2014,   and all of  ' assets were acqu...",
+        "attributes": {
+            "Author(s)": "Mojang Studios (Credits) Xbox Game Studios ( Bedrock Edition and Minecraft Education ) SkyBox Labs ( Bedrock Edition ) 4J Studios ( Legacy Console Edition ) Other Ocean Interactive ( New Nintendo 3DS Edition ) NetEase ( China Edition )",
+            "Platform(s)": "Java Edition Bedrock Edition Native Backward-compatible Minecraft Education China Edition Java Edition Bedrock Edition Minecraft Classic 🌐 Web browser",
+            "Written in": "( Java Edition ) [ 1 ] ( Bedrock & Education ) ( Minecraft Classic )",
+            "Latest release": "Java Edition : 1.21.7 Bedrock Edition : 1.21.90 ( beta 1.21.100.20 ) ( Preview 1.21.100.20 ) Minecraft Education : 1.21.10",
+            "Release date": "Java Edition May 17, 2009 ( Classic ) December 23, 2009 ( Indev ) February 27, 2010 ( Infdev ) June 30, 2010 ( Alpha ) December 20, 2010 ( Beta ) November 18, 2011 ( Release ) Minecraft 4k December 2, 2009 Bedrock Edition Android : August 16, 2011 iOS : November 16, 2011 Fire OS : April 2, 2014 Fire Phone : July 25, 2014 Galaxy Store : Unknown [ verify ] Windows Phone 8.1 : December 10, 2014 Windows : July 29, 2015 Gear VR : April 27, 2016 Oculus Rift : August 15, 2016 ChromeOS : September 2016 tvOS & Fire TV : December 19, 2016 Windows 10 Mobile : February 22, 2017 Xbox One : September 20, 2017 Windows Mixed Reality : November 21, 2017 Nintendo Switch : June 21, 2018 iPadOS : September 24, 2019 PlayStation 4 : December 10, 2019 PlayStation VR : September 22, 2020 ChromeOS : June 7, 2023 MinecraftEdu November 5, 2011 Legacy Console Edition Xbox 360 : May 9, 2012 Xbox One : September 5, 2014 PS3 : December 17, 2013 PS4 : September 4, 2014 PS Vita & PS TV : October 14, 2014 Wii U : December 17, 2015 [ 2 ] Nintendo Switch : May 11, 2017 Pi Edition February 11, 2013 Minecraft Education November 1, 2016 [ 3 ] China Edition August 8, 2017 [ 4 ] New Nintendo 3DS Edition September 13, 2017 [ 5 ] Minecraft Classic May 7, 2019",
+            "Rating(s)": "See Java Edition , Bedrock Edition , Minecraft Education , China Edition",
+            "Size": "See Java Edition , Bedrock Edition , Minecraft Education , China Edition",
+            "License": "Terms of Use",
+            "Source code": "Java Edition : Partial Bedrock / Education / China : No",
+            "Website": "minecraft.net"
+        }
+    },
+    {
+        "url": "https://reddead.fandom.com/wiki/Red_Dead_Redemption_2",
+        "name": "Red Dead",
+        "image": "https://static.wikia.nocookie.net/reddeadredemption/images/0/0a/Reddeadcover.jpg/revision/latest/scale-to-width-down/268?cb=20180503145113",
+        "description": "(stylized as  ) is a western-themed action-adventure video game developed and published by  . It is the third entry in the   series and a prequel to 2010's   and was released on October 26th, 2018  on PlayStation 4, Xbox One  and on November 5th, 2019 for PC.\n Set in a fictional recreation of the American Old West in 1899,   focuses on the life of   and his position in the notorious  . The game follows the gang's decline as they are pursued by lawmen, fellow gangs and   agents. The narrative rev...",
+        "attributes": {
+            "Developer": "Rockstar Studios [ 1 ]",
+            "Publisher": "Rockstar Games",
+            "Release date": "October 26, 2018 (PS4, Xbox One) November 5, 2019 (PC) December 5, 2019 (Steam)",
+            "Genre": "Action-adventure",
+            "Engine": "RAGE",
+            "Modes": "Singleplayer, Multiplayer",
+            "Rating": "CERO : Z ESRB : M PEGI : 18 USK : 18 ACB : MA15+",
+            "Platforms": "Native ps4 PlayStation 4 xboxone Xbox One ps4pro Playstation 4 Pro xboxonex Xbox One X pc Microsoft Windows stadia Google Stadia Backward Compatible PlayStation 5 Xbox Series X/S",
+            "Media": "Blu-ray, digital download",
+            "System requirements": "Console : 105 GB Minimum [ 2 ]",
+            "Reviews": "metacritic Metacritic : 97% gamerankings Gamerankings : 96.45%",
+            "PC": "Steam",
+            "Xbox": "Xbox Network",
+            "PlayStation": "PSN"
+        }
+    },
+    {
+        "url": "https://terraria.fandom.com/wiki/Terraria_Wiki",
+        "name": "Terraria",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://overwatch.fandom.com/wiki/Overwatch_Wiki",
+        "name": "Overwatch",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://fortnite.fandom.com/wiki/Fortnite_Wiki",
+        "name": "Fortnite",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://apexlegends.fandom.com/wiki/Apex_Legends_Wiki",
+        "name": "Apex Legends",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki",
+        "name": "League of Legends",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://dota2.fandom.com/wiki/Dota_2_Wiki",
+        "name": "Dota 2",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://eldenring.fandom.com/wiki/Elden_Ring_Wiki",
+        "name": "Elden Ring",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://assassinscreed.fandom.com/wiki/Assassin%27s_Creed_Wiki",
+        "name": "Assassin's Creed",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://residentevil.fandom.com/wiki/Resident_Evil_Wiki",
+        "name": "Resident Evil",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki",
+        "name": "Genshin Impact",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://eldenring.fandom.com/wiki/Nightreign_Characters",
+        "name": "Nightreign Characters",
+        "game": "Elden Ring",
+        "image": "https://static.wikia.nocookie.net/eldenring/images/1/1b/ERN_Icon_Menu_Header_Characters.png/revision/latest?cb=20250618034108",
+        "description": "This page lists   and   in  .\n Several characters are found in the lands of  . Interactable nonplayer characters, including   that the player did not select, populate the  . The   are enemy characters fought at the end of each  .",
+        "attributes": {}
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Character_EXP",
+        "name": "Character EXP",
+        "game": "Genshin Impact",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Item_Character_EXP.png/revision/latest?cb=20201116045223",
+        "description": "is used by   to increase their level. It is primarily obtained by using  . Killing   while   the open world gives a very small amount, based on enemy levels and type. Claiming   from   also yields some Character EXP.\n Character EXP gained from  , defeating enemies, and claiming Boss rewards is given to each member of your party, regardless of participation. Fallen party members   still receive Character EXP. Characters not in your active party will not receive Character EXP.\n Using character EXP materials costs 1   for every 5 points of Character EXP.\n The table below lists the Character EXP required for a   to level up. Keep in mind a character's max level is increased every time they are  . Leveling up will fully restore a character's HP, but will not revive fallen characters.",
+        "attributes": {
+            "Item Type": "Experience",
+            "Source 1": "Quests",
+            "Source 2": "Character EXP Material",
+            "Source 3": "Defeating Enemies",
+            "Source 4": "Claiming Ley Line Blossoms from Bosses"
+        }
+    },
+    {
+        "url": "https://eldenring.fandom.com/wiki/The_Tarnished_(Protagonist)",
+        "name": "The Tarnished (Protagonist)",
+        "game": "Elden Ring",
+        "image": "https://static.wikia.nocookie.net/eldenring/images/5/52/Tarnished_E3_2021.jpg/revision/latest/scale-to-width-down/268?cb=20210621011318",
+        "description": "is the   of   and  .\n Compelled by the \"Flame of Ambition\", the Tarnished endeavors to brandish the   and become  . In their journey throughout the  , they encounter various  , bearers of  , as well as their fellow  .\n A Tarnished of no renown, called to cross the sea of fog to the Lands Between, having been blessed once more by the Grace once thought lost to their kind.  Their origins are unknown, as are their accomplishments prior to their arrival in the Lands Between. \n The Tarnished begins their journey in the  , off the western coast of  , where they find only the corpse of a   slumped against a wall. After a brief encounter with a  , the Tarnished falls from the precipice and washes up in the  . Although death seems inevitable,  they are found by a mysterious woman riding a spectral steed. The woman grants the Tarnished two flasks: one of   and the other of  . With these blessings, the Tarnished emerges from the damp cavern into the grasslands of  .\n The Tarnished is reunited with the woman once more, and she introduces herself to them as  . Seeing that the Tarnished is maidenless, she offers to play the role of a Finger Maiden, allowing the Tarnished to convert the Runes they collect from their enemies into strength. In return, she requests that the Tarnished bring her with them to the foot of the  .  To aid them further, Melina grants the Tarnished a   which will allow them to call upon her spectral steed, who's name she reveals to be  . Melina further explains to the Tarnished that she is searching for a purpose given to her by her mother inside the Erdtree long ago, and the reason she lives, despite her burnt and spectral state.  She advises the Tarnished to seek the Great Runes: shards of the shattered Elden Ring currently held by the  . \n Early in their shared journey, Melina extends the Tarnished an invitation to  , the gathering place of Tarnished champions.  Here, the Tarnished meets several of their fellow Tarnished, as well as Roundtable Hold's leader,  .\n The Tarnished claims a Great Rune from one of the   scattered throughout the Lands Between, and is permitted audience with the  ; envoys of the  , and  . Interpreting the words of the Fingers, Enia explains to the Tarnished that the shattering of the Elden Ring has left the land in ruins , and instructs the Tarnished to hunt down the Demigods, who have been renounced by the Greater Will.  Gideon offers the Tarnished further advice, imparting his knowledge of the five Shardbearers known to Roundtable Hold. \n On their journey, the Tarnished may encounter  , a Demigod and the perpetrator of the  .  The Tarnished may choose to enter her service, aiding her as she treads the dark path of the   and attempts to establish her Order upon the world. \n After claiming two Great Runes, the Tarnished makes their way to  , the home of   the Grace-Given. Melina regains the ability to govern her own movement and bids the Tarnished farewell, leaving them with Torrent and the ability to convert Runes into strength.  The Tarnished proceeds to the Elden Throne and defeats Morgott, claiming his Great Rune, but when they attempt to pass through the door in the Erdtree's trunk they find the way obscured by impenetrable thorns. Melina appears before the Tarnished once more, and reveals that it is her purpose to help the Tarnished become Elden Lord. In order to do so, however, the Erdtree must be burned to remove the thorns.  And so, the Tarnished begins a new journey with Melina, to the  , upon which rests the giant's forge, and a flame which may burn the Erdtree.\n The Tarnished may encounter a being named  , who reveals to the Tarnished that Melina must offer herself as kindling so that the Erdtree can burn.  Shabriri offers an alternative: the tarnished may take Melina's place as kindling and singe their own flesh instead.  To this end, they must descend below the Royal Capital and meet with the  , setting themselves upon the path to becoming the Lord of Chaos.  Should the Tarnished accept this offer, they will make an enemy of Melina, who vows to hunt them down and kill them if they rise as Lord of Chaos. \n Whether through Melina's sacrifice or the power of the Frenzied Flame, the Erdtree is set aflame, and the Tarnished is transported to  ; an ancient temple in the sky said to have been crumbling since time immemorial.  In Farum Azula, the Tarnished encounters and kills  , releasing the   upon the Lands Between.  \n The Tarnished returns to Leyndell to find it coated in ash, the Erdtree glowing red above. The Tarnished makes their way through the ruined city, but their path is blocked by Gideon, who attempts to stop them from becoming Elden Lord.  The Tarnished kills Gideon, who asserts with his dying breath his belief that a Tarnished cannot become a Lord, for a man cannot kill a god. \n The Tarnished once again finds themselves at the Elden Throne. This time they find  , the First Elden Lord and former leader of the Tarnished.  Godfrey reveals that he has come to once more be granted audience with Queen Marika, the goddess of the Lands Between  The two Tarnished duel, and Godfrey is forced to tear the beast Serosh from his back and assume the role of Hoarah Loux.  Nevertheless, the Tarnished defeats Godfrey and approaches the Erdtree.\n Inside the Erdtree, the Tarnished find Marika hanging from a Rune, her body seemingly made of stone. Marika falls from the Rune and her body begins to warp as she assumes the form of  , the second Elden Lord. Radagon fights to protect the Golden Order from the Tarnished, but is bested. From his body emerges the  , a vassal of the Greater Will and embodiment of Order  that became the Elden Ring long ago . Despite its status as a god, the Tarnished fells the Elden Beast, and finally stands before the broken body of Queen Marika. Depending on the decisions they made on their journey, the Tarnished may now decide the fate of the Lands Between. They may repair the Elden Ring and rise as Elden Lord , go with Ranni on her thousand year voyage into the chill night , or become the Lord of Frenzied Flame and incinerate all that divides and distinguishes.",
+        "attributes": {
+            "AKA": "Elden Lord (certain endings) Lord of Frenzied Flame (Frenzied Flame Ending)",
+            "Classification": "Tarnished",
+            "Lineage": "Player choice",
+            "Partners": "Queen Marika the Eternal (Elden Lord endings) Ranni (Age of the Stars ending)"
+        }
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Gluttonous_Yumkasaur_Mountain_King_(Character_Card)",
+        "name": "Gluttonous Yumkasaur Mountain King",
+        "game": "Genshin Impact",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Gluttonous_Yumkasaur_Mountain_King_Character_Card.png/revision/latest/scale-to-width-down/268?cb=20250221105955",
+        "description": "is a   obtained in  .\n After reaching Proficiency 10, the following Dynamic Skin is obtained: \n \nGluttonous Yumkasaur Mountain King appears in   stages:",
+        "attributes": {
+            "Health": "7",
+            "Source 1": "Tavern Challenge"
+        }
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Character",
+        "name": "Character",
+        "game": "Genshin Impact",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/d/de/Closed_Beta_Test_2_Promotional_Artwork.png/revision/latest/scale-to-width-down/268?cb=20231117095254",
+        "description": "are obtainable units in  . They come in different  , are aligned with an  , equippable with a specific  , and belong to a  .\n Characters are primarily obtained by performing   using   or  . These   can be:\n Other ways to obtain characters include:\n Characters gain   primarily by using  , as well as negligible amounts of experience for defeating monsters.\n The Archon Quests in the Prologue -  , Act I -   and Act II -   of the   also reward Character EXP.\n Characters can be ascended to their next ascension phase once they reach their current max level and the player has the required  . Characters can be ascended up to 6 times (up to Lv. 90).\n To ascend a character, go to the character screen and click on the   button at the bottom-right of the Character Menu. A box will appear, showing which  ,  ,  , and   are needed, and the   cost required to ascend the character. If there is an item missing, click on it to see various ways to obtain it. See each character's page for the materials needed for each ascension.\n Upon reaching the 1st and 4th ascension, the character unlocks their 1st and 2nd passive combat talents respectively. The 3rd passive utility talent (available to all characters, except the  ) is already unlocked without any ascensions.\n On the 2nd ascension, the character gains a special flat bonus attribute boost, either for one of their base attributes (e.g., the   gains a bonus to their ATK value) or a special attribute (e.g.,   gains a   while   gains an Elemental Mastery bonus). This bonus further increases upon the 3rd, 5th, and 6th ascension.\n Ascending characters to their 1st, 3rd, and 5th phase will reward the player with one  .\n Most characters have a total of 3   and 3  . Combat Talents, which include  ,  , and  , and can be leveled from Lv. 1 to Lv. 10, while Passive Talents, which include  ,  ,  , cannot be leveled. Increasing the level can increase the scaling and effects of Combat Talents.\n Each character has a total of 6  , which are similar to their Passive   and increase the effectiveness of the character or add new capabilities.\n In order to unlock each Constellation of a character, a player must use a   for that specific character. Players can obtain a character's Stella Fortuna by wishing a duplicate of the character in   or buying the character from  . The  's Constellations are unique in that they are unlocked not through the above systems, but through  ,     (  only), by offering   to   ( ,  ,  ) and   instead.\n The total amount of materials required to level a character from Level 1 to 90 is:\n The total amount of materials required to level all three Combat Talents from Talent Level 1 to 10 is:\n The grand total is:\n There are   playable characters:\n These characters have been announced as upcoming playable characters by   at some point in time.\nThere is   upcoming character:\n For a full list of  , see  .\n These are non-playable characters that either:",
+        "attributes": {
+            "Type": "Game Systems"
+        }
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Character_Outfit",
+        "name": "Character Outfit",
+        "game": "Genshin Impact",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Item_Character_Outfit.png/revision/latest?cb=20220127121613",
+        "description": "are cosmetics for  . They can be previewed and worn in the  .\n Every character has a Default Outfit, and some have an Alternate Outfit in addition to their Default Outfit. These are automatically unlocked upon obtaining a character.\n Characters play outfit-exclusive   when they equip any outfit, including an Alternate Outfit, that is not their Default Outfit.\n Like all  , outfits also have   ratings. Outfits that are not Default Outfits come in 4-Star and 5-Star qualities. Outfit quality is independent of character quality; all characters' default outfits are of 0-Star quality, and both 4-Star and 5-Star characters have received 4-Star outfits.\n 5-Star outfits come with idle, Elemental Skill, and Elemental Burst  ; idle animations; and special visual effects in combat. All of these replace the original ones while the outfit is worn. 4-Star outfits do not include any of these and only change the outfit the character is wearing.\n Certain characters have outfits other than their Default and/or Alternate Outfits; these are unofficially known as \"Themed Outfits.\" Themed Outfits can be purchased from the Character Outfit Shop, accessed from  . Some themed outfits can be obtained from limited-time   for free and become available for purchase from the Character Outfit Shop after the limited-time Event ends.\n 4-star themed outfits normally cost  , while 5-star themed outfits normally cost  . If discounted, they cost   and  , respectively.\n The player can purchase or obtain a Themed Outfit for a character even if the character has not yet been obtained. The acquisition art for the outfit can be viewed in the  , and the outfit itself will be available to wear immediately after obtaining the character.\n    match the category selection:\n    match the category selection:\n    match the category selection:\n Accessed from   > Character Outfits. Parentheses indicate the costs during  .",
+        "attributes": {
+            "Type": "Game Systems",
+            "Group": "Dressing Room Monetization"
+        }
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Character_Development_Item",
+        "name": "Character Development Item",
+        "game": "Genshin Impact",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/7c/Icon_Inventory_Character_Development_Items.png/revision/latest?cb=20210602080042",
+        "description": "are items in   used to upgrade   and  . It is the third tab in the  .\n Items Types in this category include:",
+        "attributes": {
+            "Type": "Inventory Categories"
+        }
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Shikanoin_Heizou_(Character_Card)",
+        "name": "Shikanoin Heizou",
+        "game": "Genshin Impact",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Shikanoin_Heizou_Character_Card.png/revision/latest/scale-to-width-down/268?cb=20250730101025",
+        "description": "is a   obtained in  .\n After reaching Proficiency 10, the following Dynamic Skin is obtained: \n \nShikanoin Heizou appears in   stages:",
+        "attributes": {
+            "Health": "10",
+            "Source 1": "Achieve victory in Friendly Fracas (Shikanoin Heizou)"
+        }
+    },
+    {
+        "url": "https://gta.fandom.com/wiki/Protagonists_in_GTA_2_(GBC)",
+        "name": "Protagonists in Grand Theft Auto 2 (Game Boy Color)",
+        "game": "GTA",
+        "image": "https://static.wikia.nocookie.net/gtawiki/images/6/6d/InvisibleHeroImage.png/revision/latest/scale-to-width-down/268?cb=20241106091556",
+        "description": "",
+        "attributes": {
+            "Type": "CHARACTER",
+            "Appears in": "Grand Theft Auto 2 (Game Boy Color)",
+            "Voiced by": "None",
+            "Gender": "Player's choice",
+            "Also known as": "Gecko Jumbo Kosai Rooster THC-303 Comrade Grasshopper Kiddo",
+            "Full name": "Character chosen by the player",
+            "Nationality": "Player's choice",
+            "Date of birth": "Not given",
+            "Status": "Alive",
+            "Home": "Avalon , Downtown District Morton , Residential District Tedium , Industrial District , Anywhere City",
+            "Family": "Unknown",
+            "Main affiliations": "The Guider Zaibatsu Corporation Loonies Yakuza SRS Rednecks Russian Mafia Hare Krishna",
+            "Vehicles": "Player's choice",
+            "Weapons": "Player's choice",
+            "Businesses": "Car theft Contract killing Hired driver Drug dealing"
+        }
+    },
+    {
+        "url": "https://genshin-impact.fandom.com/wiki/Lan_Yan_(Character_Card)",
+        "name": "Lan Yan",
+        "game": "Genshin Impact",
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Lan_Yan_Character_Card.png/revision/latest/scale-to-width-down/268?cb=20250730101106",
+        "description": "is a   obtained in  .\n After reaching Proficiency 10, the following Dynamic Skin is obtained: \n \nLan Yan appears in   stages:",
+        "attributes": {
+            "Health": "10",
+            "Source 1": "Achieve victory in Friendly Fracas (Lan Yan)"
+        }
+    },
+    {
         "url": "https://detroit-become-human.fandom.com/wiki/Traci_(protagonist)",
         "name": "Traci",
         "game": "Detroit: Become Human",
@@ -114,34 +332,16 @@
         }
     },
     {
-        "url": "https://gta.fandom.com/wiki/Protagonists_in_GTA_London",
-        "name": "Protagonists in Grand Theft Auto: London 1969 and London 1961",
-        "game": "Grand Theft Auto V",
-        "image": "https://static.wikia.nocookie.net/gtawiki/images/6/6d/InvisibleHeroImage.png/revision/latest/scale-to-width-down/268?cb=20241106091556",
+        "url": "https://callofduty.fandom.com/wiki/Call_of_Duty_Wiki",
+        "name": "Call of Duty",
+        "image": null,
         "description": "",
-        "attributes": {
-            "Label": "Field",
-            "Type": "CHARACTER",
-            "Appears in": "Grand Theft Auto: London 1969 Grand Theft Auto: London 1961",
-            "Voiced by": "None",
-            "Gender": "Male",
-            "Also known as": "The Cheese Grater The Cheese Grater Used by Harold Cartwright Guv'nor Guv'nor Used by the Crisps' Contact Gorgeous Gorgeous Used by the Crisps' Contact, Albert Crisp and Pretty Charlie Einstein Einstein Used by the Crisps' Contact if they fail an objective Petal Petal Used by Albert Crisp Angel Angel Used by Albert Crisp Sunbeam Sunbeam Used by Keith Endeavour Chambers Endeavour Chambers Used by the British government while posing as Endeavour Chambers Agent Temple Agent Temple Used by the British government while posing as Agent Temple",
-            "Full name": "Character chosen by the player",
-            "Nationality": "British",
-            "Date of birth": "Not given",
-            "Status": "Alive",
-            "Home": "London , United Kingdom",
-            "Family": "Unnamed child (c. 1969) [ 1 ] Unnamed girlfriend/wife (c. 1969) [ 2 ] [ 3 ] [ 4 ] [ 5 ]",
-            "Main affiliations": "Jack Parkinson Albert Crisp (Formerly) Archie Crisp (Formerly) Harold Cartwright (Formerly) Her Majesty's Secret Service (Anonymously)",
-            "Vehicles": "Player's choice",
-            "Weapons": "Player's choice",
-            "Businesses": "Espionage Car theft Contract killing Hired driver Drug dealing"
-        }
+        "attributes": {}
     },
     {
         "url": "https://gta.fandom.com/wiki/GTA_Online_Protagonist",
         "name": "Grand Theft Auto Online Protagonist",
-        "game": "Grand Theft Auto V",
+        "game": "GTA",
         "image": "https://static.wikia.nocookie.net/gtawiki/images/6/6d/InvisibleHeroImage.png/revision/latest/scale-to-width-down/268?cb=20241106091556",
         "description": "",
         "attributes": {
@@ -167,24 +367,130 @@
         }
     },
     {
-        "url": "https://gta.fandom.com/wiki/Protagonists_in_GTA_2_(GBC)",
-        "name": "Protagonists in Grand Theft Auto 2 (Game Boy Color)",
-        "game": "Grand Theft Auto V",
+        "url": "https://starcitizen.fandom.com/wiki/Star_Citizen_Wiki",
+        "name": "Star Citizen",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://metroid.fandom.com/wiki/Metroid_Wiki",
+        "name": "troid",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://monsterhunter.fandom.com/wiki/Monster_Hunter_Wiki",
+        "name": "Monster Hunter",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://pokemongo.fandom.com/wiki/Pok%C3%A9mon_GO_Wiki",
+        "name": "Pokémon GO",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://animalcrossing.fandom.com/wiki/Animal_Crossing_Wiki",
+        "name": "Animal Crossing",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://stardewvalley.fandom.com/wiki/Stardew_Valley_Wiki",
+        "name": "Stardew Valley",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://fallguys.fandom.com/wiki/Fall_Guys_Wiki",
+        "name": "",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://hollowknight.fandom.com/wiki/Hollow_Knight_Wiki",
+        "name": "Hollow Knight",
+        "image": "https://static.wikia.nocookie.net/hollowknight/images/9/96/Dialogue_Top.png/revision/latest/scale-to-width-down/250?cb=20190618164010",
+        "description": "",
+        "attributes": {
+            "Effects": "Unlocks door of Tower of Love",
+            "Type": "Key",
+            "Source": "Found in Queen's Gardens"
+        }
+    },
+    {
+        "url": "https://godofwar.fandom.com/wiki/God_of_War_Wiki",
+        "name": "God of War",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://deadbydaylight.fandom.com/wiki/Dead_by_Daylight_Wiki",
+        "name": "Dead by Daylight",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://fallout76.fandom.com/wiki/Fallout_76_Wiki",
+        "name": "Fallout 76",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://rocketleague.fandom.com/wiki/Rocket_League_Wiki",
+        "name": "Rocket League",
+        "image": null,
+        "description": "",
+        "attributes": {}
+    },
+    {
+        "url": "https://cyberpunk.fandom.com/wiki/Phantom_Liberty",
+        "name": "Cyberpunk",
+        "image": "https://static.wikia.nocookie.net/cyberpunk/images/b/ba/Phantom_Liberty_Keyart_Cover_CP2077PL.jpg/revision/latest/scale-to-width-down/268?cb=20230612195829",
+        "description": "is an expansion for  . It was announced on September 6 2022, and released on September 26, 2023. \n Phantom Liberty is a new forthcoming addition to  . It will feature a spy-thriller story set in a whole   of  . As V, take on an impossible mission of espionage and survival. With new skills, new weapons and new tech, plunge deep into a web of broken loyalties and political power plays.\n Coming some time in 2023, it will be available to PC, PlayStation 5 and Xbox Series X|S. \n  gets involved in the...",
+        "attributes": {
+            "Developer(s)": "CD Projekt RED",
+            "Publisher(s)": "CD Projekt",
+            "Platform(s)": "Microsoft Windows PlayStation 5 Xbox Series X|S Apple MacOS Nintendo Switch 2",
+            "Release Date": "September 26, 2023",
+            "Genre": "Action role-playing Cyberpunk",
+            "Engine": "REDengine 4",
+            "Mode": "Single-player",
+            "System Requirements": "See System requirements section",
+            "Official Website": "cyberpunk.net"
+        }
+    },
+    {
+        "url": "https://gta.fandom.com/wiki/Protagonists_in_GTA_(1997_game)",
+        "name": "Protagonists in Grand Theft Auto",
+        "game": "GTA",
         "image": "https://static.wikia.nocookie.net/gtawiki/images/6/6d/InvisibleHeroImage.png/revision/latest/scale-to-width-down/268?cb=20241106091556",
         "description": "",
         "attributes": {
+            "Label": "Field",
             "Type": "CHARACTER",
-            "Appears in": "Grand Theft Auto 2 (Game Boy Color)",
+            "Appears in": "Grand Theft Auto",
             "Voiced by": "None",
             "Gender": "Player's choice",
-            "Also known as": "Gecko Jumbo Kosai Rooster THC-303 Comrade Grasshopper Kiddo",
+            "Also known as": "Note: The dialogues were not changed after the addition of female protagonists. Aruzo Aruzo Used by Sonetti's Right-Hand Man Bubby's baby Bubby's baby Used by the Vercotti Family contact during Gangsta Bang - Phone 2 Monkey Boy Monkey Boy Used by the Vercotti Family contact Pretty boy Pretty boy Used by El Burro Flyboy Flyboy Used by Bryson Rude boy Rude boy Used by Brother Marcus Rankin' bwoy Rankin' bwoy Used by Brother Marcus",
             "Full name": "Character chosen by the player",
             "Nationality": "Player's choice",
             "Date of birth": "Not given",
             "Status": "Alive",
-            "Home": "Avalon , Downtown District Morton , Residential District Tedium , Industrial District , Anywhere City",
-            "Family": "Unknown",
-            "Main affiliations": "The Guider Zaibatsu Corporation Loonies Yakuza SRS Rednecks Russian Mafia Hare Krishna",
+            "Home": "Vice City San Andreas ( Formerly ) Liberty City ( Formerly )",
+            "Family": "Unnamed mother Unnamed father",
+            "Main affiliations": "Brother Marcus Brotherhood of Jah Army of Love Samuel Deever (Formerly) El Burro (Formerly) Uncle Fu Uncle Fu's Crime Syndicate Robert \"Bubby\" Seragliano Vercotti Crime Family",
             "Vehicles": "Player's choice",
             "Weapons": "Player's choice",
             "Businesses": "Car theft Contract killing Hired driver Drug dealing"
@@ -193,7 +499,7 @@
     {
         "url": "https://gta.fandom.com/wiki/Stretch_(character)",
         "name": "Stretch",
-        "game": "Grand Theft Auto V",
+        "game": "GTA",
         "image": "https://static.wikia.nocookie.net/gtawiki/images/6/6d/InvisibleHeroImage.png/revision/latest/scale-to-width-down/268?cb=20241106091556",
         "description": "",
         "attributes": {
@@ -221,28 +527,28 @@
         }
     },
     {
-        "url": "https://gta.fandom.com/wiki/Protagonists_in_GTA_(1997_game)",
-        "name": "Protagonists in Grand Theft Auto",
-        "game": "Grand Theft Auto V",
+        "url": "https://gta.fandom.com/wiki/Protagonists_in_GTA_London",
+        "name": "Protagonists in Grand Theft Auto: London 1969 and London 1961",
+        "game": "GTA",
         "image": "https://static.wikia.nocookie.net/gtawiki/images/6/6d/InvisibleHeroImage.png/revision/latest/scale-to-width-down/268?cb=20241106091556",
         "description": "",
         "attributes": {
             "Label": "Field",
             "Type": "CHARACTER",
-            "Appears in": "Grand Theft Auto",
+            "Appears in": "Grand Theft Auto: London 1969 Grand Theft Auto: London 1961",
             "Voiced by": "None",
-            "Gender": "Player's choice",
-            "Also known as": "Note: The dialogues were not changed after the addition of female protagonists. Aruzo Aruzo Used by Sonetti's Right-Hand Man Bubby's baby Bubby's baby Used by the Vercotti Family contact during Gangsta Bang - Phone 2 Monkey Boy Monkey Boy Used by the Vercotti Family contact Pretty boy Pretty boy Used by El Burro Flyboy Flyboy Used by Bryson Rude boy Rude boy Used by Brother Marcus Rankin' bwoy Rankin' bwoy Used by Brother Marcus",
+            "Gender": "Male",
+            "Also known as": "The Cheese Grater The Cheese Grater Used by Harold Cartwright Guv'nor Guv'nor Used by the Crisps' Contact Gorgeous Gorgeous Used by the Crisps' Contact, Albert Crisp and Pretty Charlie Einstein Einstein Used by the Crisps' Contact if they fail an objective Petal Petal Used by Albert Crisp Angel Angel Used by Albert Crisp Sunbeam Sunbeam Used by Keith Endeavour Chambers Endeavour Chambers Used by the British government while posing as Endeavour Chambers Agent Temple Agent Temple Used by the British government while posing as Agent Temple",
             "Full name": "Character chosen by the player",
-            "Nationality": "Player's choice",
+            "Nationality": "British",
             "Date of birth": "Not given",
             "Status": "Alive",
-            "Home": "Vice City San Andreas ( Formerly ) Liberty City ( Formerly )",
-            "Family": "Unnamed mother Unnamed father",
-            "Main affiliations": "Brother Marcus Brotherhood of Jah Army of Love Samuel Deever (Formerly) El Burro (Formerly) Uncle Fu Uncle Fu's Crime Syndicate Robert \"Bubby\" Seragliano Vercotti Crime Family",
+            "Home": "London , United Kingdom",
+            "Family": "Unnamed child (c. 1969) [ 1 ] Unnamed girlfriend/wife (c. 1969) [ 2 ] [ 3 ] [ 4 ] [ 5 ]",
+            "Main affiliations": "Jack Parkinson Albert Crisp (Formerly) Archie Crisp (Formerly) Harold Cartwright (Formerly) Her Majesty's Secret Service (Anonymously)",
             "Vehicles": "Player's choice",
             "Weapons": "Player's choice",
-            "Businesses": "Car theft Contract killing Hired driver Drug dealing"
+            "Businesses": "Espionage Car theft Contract killing Hired driver Drug dealing"
         }
     }
 ]
