@@ -186,11 +186,16 @@
 }
 
 .search-bar-real {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
   max-width: 600px;
   margin: 0 auto;
 }
 
 .search-input-group {
+  margin: 1rem;
   position: relative;
   display: flex;
   align-items: center;

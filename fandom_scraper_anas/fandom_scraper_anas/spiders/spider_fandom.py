@@ -75,7 +75,7 @@ class SpiderFandom(scrapy.Spider):
         "PLAYWRIGHT_LAUNCH_OPTIONS": {"headless": True},
         "PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT": 30000,
         "FEEDS": {
-            "../data/fandom_data.json": {
+            "../../data/fandom_data.json": {
                 "format": "json",
                 "encoding": "utf8",
                 "overwrite": True,

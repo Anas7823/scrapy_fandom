@@ -85,6 +85,22 @@
       <div class="filters-container">
         <div class="search-bar-real">
           <div class="search-input-group">
+            <button @click="launch_Scrap" class="search-icon">🔍</button>
+            <input 
+              v-model="fandomUrl"
+              type="text" 
+              placeholder="Rechercher des liens..."
+              class="search-input"
+            />
+            <button 
+              v-if="searchQueryX" 
+              @click="clearSearch"
+              class="clear-btn"
+            >
+              ✕
+            </button>
+          </div>
+          <div class="search-input-group">
             <span class="search-icon">🔍</span>
             <input 
               v-model="searchQuery"
@@ -333,8 +349,52 @@
   </div>
 </template>
 
+<script setup>
+import { ref } from 'vue'
+
+const fandomUrl = ref('')
+const loading = ref(false)
+const success = ref(false)
+const error = ref(null)
+const message = ref('')
+
+const launch_Scrap = async () => {
+  if (!fandomUrl.value) {
+    error.value = "Veuillez entrer une URL."
+    return
+  }
+
+  loading.value = true
+  error.value = null
+  success.value = false
+
+  try {
+    console.log("Lancement du scraping...")
+    const response = await fetch('http://localhost:8000/scrape', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ url: fandomUrl.value }),
+    })
+
+    if (!response.ok) {
+      throw new Error(`Erreur ${response.status}`)
+    }
+
+    const data = await response.json()
+    message.value = data.detail || "Scraping terminé avec succès."
+    success.value = true
+  } catch (err) {
+    error.value = err.message || "Une erreur est survenue."
+  } finally {
+    loading.value = false
+  }
+}
+</script>
+
 <script>
-import scrapedData from '../data/scrapedData.json'
+import scrapedData from '../../../../data/fandom_data.json'
 
 export default {
   name: 'RealDataHome',
